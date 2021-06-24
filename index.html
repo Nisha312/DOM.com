@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: aquamarine;
+            height: 200px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+    </div>
+    <script>
+        let  tag=document.createElement("h2");
+        let text=document.createTextNode("this is a h2 tag.");
+        tag.appendChild(text);
+        let target=document.getElementById("box")
+       // target.insertBefore(tag,target.childNodes[1]);
+       target.insertAdjacentElement("afterbegin",tag);
+      // target.insertAdjacentElement("beforebegin",tag);
+     // target.insertAdjacentElement("beforeend",tag);
+    </script>
+</body>
+</html>
